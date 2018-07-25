@@ -4,9 +4,7 @@ using UnityEngine;
 
 [CreateAssetMenu(menuName = "Datas/RepairableItem")]
 public class RepairableItem : ScriptableObject {
-    public enum RepairState {
-        DESTROYED, REPAIRING, REPAIRED
-    }
 
-    public RepairState state;
+    public float interactionRange = 2f;
+    public float repairDuration = 2f;
 }

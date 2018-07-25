@@ -6,17 +6,20 @@ public class PlayerManager : MonoBehaviour {
 
     public Player player;
 
-    [Header("Events")]
-    [SerializeField] private GameEvent playerInteractionEvent;
+    private bool wasInteracting;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    [Header("Events")]
+    [SerializeField] private GameEvent playerStartInteractionEvent;
+    [SerializeField] private GameEvent playerEndInteractionEvent;
+
+    // Use this for initialization
+    void Start() {
+        wasInteracting = false;
+    }
 
     #region UPDATE
     // Update is called once per frame
-    void Update () {
+    void Update() {
         CheckInputs();
         MovePlayer();
     }
@@ -31,15 +34,20 @@ public class PlayerManager : MonoBehaviour {
     }
 
     private void CheckInputs() {
-        if (Input.GetAxis("Fire1") > 0) {
-            playerInteractionEvent.Fire(new GameEventMessage(this));
+        if (wasInteracting) {
+            if (Input.GetAxis("Fire1") == 0) {
+                wasInteracting = false;
+                playerEndInteractionEvent.Fire(new GameEventMessage(this));
+            }
+        } else {
+            if (Input.GetAxis("Fire1") > 0) {
+                wasInteracting = true;
+                playerStartInteractionEvent.Fire(new GameEventMessage(this));
+            }
         }
     }
     #endregion
 
     #region EVENTS
-    public void OnItemPickUp(GameEventMessage msg) {
-        Debug.Log("Item picked up");
-    }
     #endregion
 }

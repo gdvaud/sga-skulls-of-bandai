@@ -113,7 +113,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 11400000, guid: 4dc2a3b7f0642894a893f4e6d5cfa72d, type: 2}
-  playerInteractionEvent: {fileID: 11400000, guid: b924fd33ecdf7a44f9af52794403fe92,
+  playerStartInteractionEvent: {fileID: 11400000, guid: d3ae7fbe00aac7e48a271e6c1a697c5a,
+    type: 2}
+  playerEndInteractionEvent: {fileID: 11400000, guid: b924fd33ecdf7a44f9af52794403fe92,
     type: 2}
 --- !u!135 &135852166583005242
 SphereCollider:
