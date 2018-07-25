@@ -11,4 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b3eeed4241772040842e0a427e5f40c, type: 3}
   m_Name: DefaultPlayer
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   movementSpeed: 20
+=======
+  movementSpeed: 15
+>>>>>>> Stashed changes
