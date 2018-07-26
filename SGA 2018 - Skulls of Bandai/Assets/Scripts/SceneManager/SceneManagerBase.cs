@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class SceneManagerBase : MonoBehaviour {
 
+    public bool isLoading;
+
     public abstract void ChangeScene(string name);
     public abstract void ChangeScene(int id);
 }

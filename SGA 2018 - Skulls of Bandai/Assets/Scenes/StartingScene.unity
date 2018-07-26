@@ -311,13 +311,23 @@ CanvasGroup:
   m_CorrespondingSourceObject: {fileID: 225959910850127990, guid: 523820a85d8531143b004b06c6f8c8ad,
     type: 2}
   m_PrefabInternal: {fileID: 1312241915}
---- !u!1001 &2036541561
+--- !u!1001 &1541724400
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114632838150030878, guid: 605946b25d2f0fc41b471624ab40ccc2,
+        type: 2}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114817088466772352, guid: 605946b25d2f0fc41b471624ab40ccc2,
+        type: 2}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
       propertyPath: m_LocalPosition.x
       value: 6.0552416
@@ -360,6 +370,41 @@ Prefab:
       propertyPath: loadingProgressBar
       value: 
       objectReference: {fileID: 1312241916}
+    - target: {fileID: 114632838150030878, guid: 605946b25d2f0fc41b471624ab40ccc2,
+        type: 2}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114632838150030878, guid: 605946b25d2f0fc41b471624ab40ccc2,
+        type: 2}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114817088466772352, guid: 605946b25d2f0fc41b471624ab40ccc2,
+        type: 2}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114817088466772352, guid: 605946b25d2f0fc41b471624ab40ccc2,
+        type: 2}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114632838150030878, guid: 605946b25d2f0fc41b471624ab40ccc2,
+        type: 2}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1541724401}
+    - target: {fileID: 114817088466772352, guid: 605946b25d2f0fc41b471624ab40ccc2,
+        type: 2}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1541724401}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1541724401 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1888648384835908, guid: 605946b25d2f0fc41b471624ab40ccc2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1541724400}

@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4009606483582090}
   - component: {fileID: 114290613844393204}
+  - component: {fileID: 114500205691975952}
   m_Layer: 0
   m_Name: GameCore
   m_TagString: Untagged
@@ -51,6 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fe5d0b76ccc2b4898bf08a9e6b8680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLoading: 0
   loadingCanvas: {fileID: 0}
   loadingProgressBar: {fileID: 0}
   sceneLoadStartedEvent: {fileID: 11400000, guid: ebd576c4d9838694db606a499b55a71d,
@@ -59,3 +61,14 @@ MonoBehaviour:
     type: 2}
   firstSceneName: Menu
   fadeSpeed: 1
+--- !u!114 &114500205691975952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1888648384835908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7f268008883ed64c86addbc253a9261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

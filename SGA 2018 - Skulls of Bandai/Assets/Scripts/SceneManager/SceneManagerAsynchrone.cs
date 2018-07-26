@@ -22,10 +22,12 @@ public class SceneManagerAsynchrone : SceneManagerBase {
 
     // Use this for initialization
     void Start() {
+        isLoading = false;
         ChangeScene(SceneUtility.GetBuildIndexByScenePath(firstSceneName));
     }
 
     private IEnumerator FadeInStartLoadingScene(int sceneId) {
+        isLoading = true;
         sceneLoadStartedEvent.Fire(new GameEventMessage(this));
 
         while (loadingCanvas.alpha < CANVAS_ALPHA_MAX) {
@@ -61,6 +63,7 @@ public class SceneManagerAsynchrone : SceneManagerBase {
 
         loadingProgressBar.fillAmount = 0;
         sceneLoadEndedEvent.Fire(new GameEventMessage(this));
+        isLoading = false;
     }
 
     public override void ChangeScene(string name) {
