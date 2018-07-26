@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class SceneManagerAsynchrone : SceneManagerBase {
 
     [SerializeField] private CanvasGroup loadingCanvas;
+    [SerializeField] private Image loadingProgressBar;
     [SerializeField] private GameEvent sceneLoadStartedEvent;
     [SerializeField] private GameEvent sceneLoadEndedEvent;
     [SerializeField] private string firstSceneName;
@@ -42,6 +43,7 @@ public class SceneManagerAsynchrone : SceneManagerBase {
 
         AsyncOperation sceneLoading = SceneManager.LoadSceneAsync(sceneId, LoadSceneMode.Additive);
         while (!sceneLoading.isDone) {
+            loadingProgressBar.fillAmount = sceneLoading.progress;
             yield return null;
         }
 
@@ -57,6 +59,7 @@ public class SceneManagerAsynchrone : SceneManagerBase {
             yield return null;
         }
 
+        loadingProgressBar.fillAmount = 0;
         sceneLoadEndedEvent.Fire(new GameEventMessage(this));
     }
 
