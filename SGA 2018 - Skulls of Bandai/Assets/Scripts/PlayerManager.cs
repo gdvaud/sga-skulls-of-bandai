@@ -35,12 +35,12 @@ public class PlayerManager : MonoBehaviour {
 
     private void CheckInputs() {
         if (wasInteracting) {
-            if (Input.GetAxis("Fire1") == 0) {
+            if (Input.GetAxis("Interact") == 0) {
                 wasInteracting = false;
                 playerEndInteractionEvent.Fire(new GameEventMessage(this));
             }
         } else {
-            if (Input.GetAxis("Fire1") > 0) {
+            if (Input.GetAxis("Interact") > 0) {
                 wasInteracting = true;
                 playerStartInteractionEvent.Fire(new GameEventMessage(this));
             }
