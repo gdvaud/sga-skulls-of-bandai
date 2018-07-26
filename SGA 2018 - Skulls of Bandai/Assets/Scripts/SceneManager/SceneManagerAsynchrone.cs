@@ -6,8 +6,9 @@ using UnityEngine.UI;
 
 public class SceneManagerAsynchrone : SceneManagerBase {
 
-    [SerializeField] private CanvasGroup loadingCanvas;
-    [SerializeField] private Image loadingProgressBar;
+    [SerializeField] private bool isDebuging = false;
+    [SerializeField] private CanvasGroup loadingCanvas = null;
+    [SerializeField] private Image loadingProgressBar = null;
     [SerializeField] private GameEvent sceneLoadStartedEvent;
     [SerializeField] private GameEvent sceneLoadEndedEvent;
     [SerializeField] private string firstSceneName;
@@ -23,19 +24,23 @@ public class SceneManagerAsynchrone : SceneManagerBase {
     // Use this for initialization
     void Start() {
         isLoading = false;
-        ChangeScene(SceneUtility.GetBuildIndexByScenePath(firstSceneName));
+        if (!isDebuging) {
+            ChangeScene(SceneUtility.GetBuildIndexByScenePath(firstSceneName));
+        }
     }
 
     private IEnumerator FadeInStartLoadingScene(int sceneId) {
         isLoading = true;
         sceneLoadStartedEvent.Fire(new GameEventMessage(this));
 
-        while (loadingCanvas.alpha < CANVAS_ALPHA_MAX) {
-            loadingCanvas.alpha += fadeSpeed * Time.deltaTime;
-            if (loadingCanvas.alpha > CANVAS_ALPHA_MAX) {
-                loadingCanvas.alpha = CANVAS_ALPHA_MAX;
+        if (loadingCanvas != null) {
+            while (loadingCanvas.alpha < CANVAS_ALPHA_MAX) {
+                loadingCanvas.alpha += fadeSpeed * Time.deltaTime;
+                if (loadingCanvas.alpha > CANVAS_ALPHA_MAX) {
+                    loadingCanvas.alpha = CANVAS_ALPHA_MAX;
+                }
+                yield return null;
             }
-            yield return null;
         }
 
         if (sceneLoaded != NULL_SCENE_ID) {
@@ -45,7 +50,9 @@ public class SceneManagerAsynchrone : SceneManagerBase {
 
         AsyncOperation sceneLoading = SceneManager.LoadSceneAsync(sceneId, LoadSceneMode.Additive);
         while (!sceneLoading.isDone) {
-            loadingProgressBar.fillAmount = sceneLoading.progress;
+            if (loadingProgressBar != null) {
+                loadingProgressBar.fillAmount = sceneLoading.progress;
+            }
             yield return null;
         }
 
@@ -54,14 +61,18 @@ public class SceneManagerAsynchrone : SceneManagerBase {
     }
 
     private IEnumerator FadeOutEndLoadingScene() {
-        while (loadingCanvas.alpha > CANVAS_ALPHA_MIN) {
-            loadingCanvas.alpha -= fadeSpeed * Time.deltaTime;
-            if (loadingCanvas.alpha < CANVAS_ALPHA_MIN)
-                loadingCanvas.alpha = CANVAS_ALPHA_MIN;
-            yield return null;
+        if (loadingCanvas != null) {
+            while (loadingCanvas.alpha > CANVAS_ALPHA_MIN) {
+                loadingCanvas.alpha -= fadeSpeed * Time.deltaTime;
+                if (loadingCanvas.alpha < CANVAS_ALPHA_MIN)
+                    loadingCanvas.alpha = CANVAS_ALPHA_MIN;
+                yield return null;
+            }
         }
 
-        loadingProgressBar.fillAmount = 0;
+        if (loadingProgressBar != null) {
+            loadingProgressBar.fillAmount = 0;
+        }
         sceneLoadEndedEvent.Fire(new GameEventMessage(this));
         isLoading = false;
     }

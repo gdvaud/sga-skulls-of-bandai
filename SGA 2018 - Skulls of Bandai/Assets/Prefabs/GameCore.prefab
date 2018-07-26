@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4009606483582090}
   - component: {fileID: 114290613844393204}
-  - component: {fileID: 114500205691975952}
+  - component: {fileID: 114678738038034730}
   m_Layer: 0
   m_Name: GameCore
   m_TagString: Untagged
@@ -61,7 +61,7 @@ MonoBehaviour:
     type: 2}
   firstSceneName: Menu
   fadeSpeed: 1
---- !u!114 &114500205691975952
+--- !u!114 &114678738038034730
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -69,6 +69,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1888648384835908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7f268008883ed64c86addbc253a9261, type: 3}
+  m_Script: {fileID: 11500000, guid: 171063863f984c24b95b5f7c0c8f3e87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnInteractionStartedEvent: {fileID: 11400000, guid: f4ceacaaa90030b4ba4522cb9385cada,
+    type: 2}
+  OnInteractionEndedEvent: {fileID: 11400000, guid: c81c2d82ff6a57943b1d06d9f04410e0,
+    type: 2}
+  OnMovingEvent: {fileID: 11400000, guid: 3fef70fb469eb7749883bbcd333a6601, type: 2}
+  OnPausingEvent: {fileID: 11400000, guid: 3a6283e512e1b9b47a82ee17ceaf3ef5, type: 2}
