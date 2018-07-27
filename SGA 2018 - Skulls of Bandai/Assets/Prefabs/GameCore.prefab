@@ -132,8 +132,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae326626c8c44249aa4f667551e7eb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nbItem: 0
   maxTimerDuration: 10
+  ItemRepairedCountChangedEvent: {fileID: 11400000, guid: 1d36ea75f2cfd574a84de1d7eea7e249,
+    type: 2}
+  OnTimerValueChangedEvent: {fileID: 11400000, guid: 4a639f45989dd8c47834f53bff5e7abd,
+    type: 2}
 --- !u!114 &114678738038034730
 MonoBehaviour:
   m_ObjectHideFlags: 1
