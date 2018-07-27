@@ -14,7 +14,7 @@ public class CameraFollower : MonoBehaviour {
     public void OnPlayerMoved(GameEventMessage msg) {
         Vector3 playerPosition = (Vector3)msg.value;
         if (!isFirst) {
-            transform.Translate(playerPosition - oldPlayerPosition);
+            transform.position += playerPosition - oldPlayerPosition;
         } else {
             isFirst = false;
         }

@@ -17,6 +17,7 @@ public class PlayerManager : MonoBehaviour {
 
     public void OnMoving(GameEventMessage msg) {
         Vector3 direction = (Vector3)msg.value;
+
         Vector3 target = transform.position + direction;
 
         transform.LookAt(target, transform.up);
