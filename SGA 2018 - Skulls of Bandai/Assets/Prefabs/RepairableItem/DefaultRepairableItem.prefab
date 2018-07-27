@@ -170,6 +170,7 @@ MonoBehaviour:
   state: 0
   reparationDuration: 1
   ItemRepairedEvent: {fileID: 11400000, guid: ddf6930940f853b4ba42b30f2faf0b51, type: 2}
+  ItemSpawnedEvent: {fileID: 11400000, guid: 7fb36082dbd2f0d4fbe3a150190037a9, type: 2}
 --- !u!135 &135810794182910674
 SphereCollider:
   m_ObjectHideFlags: 1

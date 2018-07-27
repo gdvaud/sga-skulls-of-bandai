@@ -8,11 +8,13 @@ public class ItemManager : MonoBehaviour {
     [SerializeField] private float reparationDuration = 1f;
     private float reperationStartTime;
     [SerializeField] private GameEvent ItemRepairedEvent;
+    [SerializeField] private GameEvent ItemSpawnedEvent; 
 
 	// Use this for initialization
 	void Start () {
         state = ItemState.DESTROYED;
         reperationStartTime = 0;
+        ItemSpawnedEvent.Fire(new GameEventMessage(this));
     }
 	
 	// Update is called once per frame
