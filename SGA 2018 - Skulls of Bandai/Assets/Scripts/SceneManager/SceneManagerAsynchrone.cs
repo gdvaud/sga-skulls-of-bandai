@@ -82,6 +82,8 @@ public class SceneManagerAsynchrone : SceneManagerBase {
     }
 
     public override void ChangeScene(int sceneId) {
-        StartCoroutine(FadeInStartLoadingScene(sceneId));
+        if (!isLoading) {
+            StartCoroutine(FadeInStartLoadingScene(sceneId));
+        }
     }
 }
