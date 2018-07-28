@@ -67,6 +67,7 @@ public class ItemManager : MonoBehaviour {
     private void OnTriggerExit(Collider other) {
         if (other.tag.Equals("Player")) {
             if (state != ItemState.REPAIRED) {
+                jaugeSlider.fillAmount = 0f;
                 state = ItemState.DESTROYED;
                 jauge.SetActive(false);
             }

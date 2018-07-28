@@ -1,0 +1,324 @@
+fileFormatVersion: 2
+guid: 9f21d61f5d107784b9414a74ca7e806a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: arbre low poly
+    100002: Book
+    100004: chaise cuisine
+    100006: chaise cuisine001
+    100008: chaise cuisine002
+    100010: chaise cuisine003
+    100012: chaise cuisine004
+    100014: chaise cuisine005
+    100016: "Chaise c\xF4ne001"
+    100018: "Chaise c\xF4ne002"
+    100020: Chaise longue 003
+    100022: Chaise longue 004
+    100024: Chaise longue 005
+    100026: Chaise longue 006
+    100028: Chaise longue 2
+    100030: Chaise longue transate
+    100032: "chemin\xE9e"
+    100034: "Etag\xE8re"
+    100036: Guirelande00
+    100038: Guirelande01
+    100040: Guirelande02
+    100042: Guirelande03
+    100044: Hautparleur 1
+    100046: Hautparleur 2
+    100048: Kiosque
+    100050: lampe salon vertical
+    100052: //RootNode
+    100054: Object
+    100056: Object002
+    100058: parasol
+    100060: piscine gonflable
+    100062: Plane002
+    100064: Sofa salon
+    100066: Table
+    100068: "Table cass\xE9e"
+    100070: Table jardin
+    100072: Table jardin petites
+    100074: Table jardin petites001
+    100076: Table jardin petites002
+    100078: Table jardin petites003
+    100080: Table jardin002
+    100082: Table jardin003
+    100084: Table salon
+    100086: Table salon ovale
+    100088: Tableau Simon
+    100090: TV
+    400000: arbre low poly
+    400002: Book
+    400004: chaise cuisine
+    400006: chaise cuisine001
+    400008: chaise cuisine002
+    400010: chaise cuisine003
+    400012: chaise cuisine004
+    400014: chaise cuisine005
+    400016: "Chaise c\xF4ne001"
+    400018: "Chaise c\xF4ne002"
+    400020: Chaise longue 003
+    400022: Chaise longue 004
+    400024: Chaise longue 005
+    400026: Chaise longue 006
+    400028: Chaise longue 2
+    400030: Chaise longue transate
+    400032: "chemin\xE9e"
+    400034: "Etag\xE8re"
+    400036: Guirelande00
+    400038: Guirelande01
+    400040: Guirelande02
+    400042: Guirelande03
+    400044: Hautparleur 1
+    400046: Hautparleur 2
+    400048: Kiosque
+    400050: lampe salon vertical
+    400052: //RootNode
+    400054: Object
+    400056: Object002
+    400058: parasol
+    400060: piscine gonflable
+    400062: Plane002
+    400064: Sofa salon
+    400066: Table
+    400068: "Table cass\xE9e"
+    400070: Table jardin
+    400072: Table jardin petites
+    400074: Table jardin petites001
+    400076: Table jardin petites002
+    400078: Table jardin petites003
+    400080: Table jardin002
+    400082: Table jardin003
+    400084: Table salon
+    400086: Table salon ovale
+    400088: Tableau Simon
+    400090: TV
+    2100000: 'Material #82'
+    2100002: 'Material #59'
+    2100004: 'Material #60'
+    2100006: 'Material #58'
+    2100008: 'Material #61'
+    2100010: 'Material #64'
+    2100012: No Name
+    2100014: 'Material #63'
+    2100016: TV screen
+    2300000: arbre low poly
+    2300002: Book
+    2300004: chaise cuisine
+    2300006: chaise cuisine001
+    2300008: chaise cuisine002
+    2300010: chaise cuisine003
+    2300012: chaise cuisine004
+    2300014: chaise cuisine005
+    2300016: "Chaise c\xF4ne001"
+    2300018: "Chaise c\xF4ne002"
+    2300020: Chaise longue 003
+    2300022: Chaise longue 004
+    2300024: Chaise longue 005
+    2300026: Chaise longue 006
+    2300028: Chaise longue 2
+    2300030: Chaise longue transate
+    2300032: "chemin\xE9e"
+    2300034: "Etag\xE8re"
+    2300036: Guirelande00
+    2300038: Guirelande01
+    2300040: Guirelande02
+    2300042: Guirelande03
+    2300044: Hautparleur 1
+    2300046: Hautparleur 2
+    2300048: Kiosque
+    2300050: lampe salon vertical
+    2300052: Object
+    2300054: Object002
+    2300056: parasol
+    2300058: piscine gonflable
+    2300060: Plane002
+    2300062: Sofa salon
+    2300064: Table
+    2300066: "Table cass\xE9e"
+    2300068: Table jardin
+    2300070: Table jardin petites
+    2300072: Table jardin petites001
+    2300074: Table jardin petites002
+    2300076: Table jardin petites003
+    2300078: Table jardin002
+    2300080: Table jardin003
+    2300082: Table salon
+    2300084: Table salon ovale
+    2300086: Tableau Simon
+    2300088: TV
+    3300000: arbre low poly
+    3300002: Book
+    3300004: chaise cuisine
+    3300006: chaise cuisine001
+    3300008: chaise cuisine002
+    3300010: chaise cuisine003
+    3300012: chaise cuisine004
+    3300014: chaise cuisine005
+    3300016: "Chaise c\xF4ne001"
+    3300018: "Chaise c\xF4ne002"
+    3300020: Chaise longue 003
+    3300022: Chaise longue 004
+    3300024: Chaise longue 005
+    3300026: Chaise longue 006
+    3300028: Chaise longue 2
+    3300030: Chaise longue transate
+    3300032: "chemin\xE9e"
+    3300034: "Etag\xE8re"
+    3300036: Guirelande00
+    3300038: Guirelande01
+    3300040: Guirelande02
+    3300042: Guirelande03
+    3300044: Hautparleur 1
+    3300046: Hautparleur 2
+    3300048: Kiosque
+    3300050: lampe salon vertical
+    3300052: Object
+    3300054: Object002
+    3300056: parasol
+    3300058: piscine gonflable
+    3300060: Plane002
+    3300062: Sofa salon
+    3300064: Table
+    3300066: "Table cass\xE9e"
+    3300068: Table jardin
+    3300070: Table jardin petites
+    3300072: Table jardin petites001
+    3300074: Table jardin petites002
+    3300076: Table jardin petites003
+    3300078: Table jardin002
+    3300080: Table jardin003
+    3300082: Table salon
+    3300084: Table salon ovale
+    3300086: Tableau Simon
+    3300088: TV
+    4300000: arbre low poly
+    4300002: Table
+    4300004: piscine gonflable
+    4300006: Chaise longue transate
+    4300008: Guirelande00
+    4300010: Chaise longue 2
+    4300012: Table salon
+    4300014: Plane002
+    4300016: "Etag\xE8re"
+    4300018: Book
+    4300020: Table jardin
+    4300022: Table jardin petites
+    4300024: Table jardin petites001
+    4300026: Kiosque
+    4300028: Chaise longue 003
+    4300030: Chaise longue 004
+    4300032: Chaise longue 005
+    4300034: Guirelande01
+    4300036: Guirelande02
+    4300038: Guirelande03
+    4300040: Table jardin petites002
+    4300042: Table jardin petites003
+    4300044: "Chaise c\xF4ne001"
+    4300046: Sofa salon
+    4300048: lampe salon vertical
+    4300050: "chemin\xE9e"
+    4300052: chaise cuisine
+    4300054: Hautparleur 1
+    4300056: "Chaise c\xF4ne002"
+    4300058: Table jardin002
+    4300060: Table jardin003
+    4300062: parasol
+    4300064: Hautparleur 2
+    4300066: TV
+    4300068: chaise cuisine001
+    4300070: chaise cuisine002
+    4300072: chaise cuisine003
+    4300074: chaise cuisine004
+    4300076: chaise cuisine005
+    4300078: Chaise longue 006
+    4300080: "Table cass\xE9e"
+    4300082: Object
+    4300084: Object002
+    4300086: Tableau Simon
+    4300088: Table salon ovale
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
