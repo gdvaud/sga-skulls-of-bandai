@@ -11,7 +11,8 @@ public class ItemManager : MonoBehaviour {
     [SerializeField] private GameEvent ItemRepairedEvent;
     [SerializeField] private GameObject jauge;
     [SerializeField] private Image jaugeSlider;
-    [SerializeField] private GameEvent ItemSpawnedEvent; 
+    [SerializeField] private GameEvent ItemSpawnedEvent;
+    [SerializeField] private GameObject cleanObject;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +20,7 @@ public class ItemManager : MonoBehaviour {
         reperationStartTime = 0;
         jauge.SetActive(false);
         ItemSpawnedEvent.Fire(new GameEventMessage(this));
+        cleanObject.SetActive(false);
     }
 	
 	// Update is called once per frame
@@ -31,6 +33,8 @@ public class ItemManager : MonoBehaviour {
                 //Hide ProgressBar definitively
                 jauge.SetActive(false);
                 //Jaugeslider
+                cleanObject.SetActive(true);
+                gameObject.SetActive(false);
             }
             else
             {
