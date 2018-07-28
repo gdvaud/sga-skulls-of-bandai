@@ -462,6 +462,11 @@ Prefab:
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1541724401}
+    - target: {fileID: 114588246916697264, guid: 605946b25d2f0fc41b471624ab40ccc2,
+        type: 2}
+      propertyPath: maxTimerDuration
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
   m_IsPrefabAsset: 0
