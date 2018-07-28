@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour {
     private SceneManagerBase sceneManager;
     [SerializeField] private GameEvent ItemRepairedCountChangedEvent;
     [SerializeField] private GameEvent OnTimerValueChangedEvent;
+    [SerializeField] private GameEvent OnPauseValueChangedEvent;
+    private bool isPaused;
 
     // Use this for initialization
     void Start() {
@@ -20,14 +22,17 @@ public class GameManager : MonoBehaviour {
         nbItem = 0;
         totalItems = 0;
         isGameEnded = false;
+        isPaused = false;
     }
 
     private void Update() {
-        timeSpent += Time.deltaTime;
-        OnTimerValueChangedEvent.Fire(new GameEventMessage(this, new Vector2(timeSpent, maxTimerDuration)));
-        if (!isGameEnded && timeSpent > maxTimerDuration) {
-            //sceneManager.ChangeScene("EndGame");
-            isGameEnded = true;
+        if (!isPaused) {
+            timeSpent += Time.deltaTime;
+            OnTimerValueChangedEvent.Fire(new GameEventMessage(this, new Vector2(timeSpent, maxTimerDuration)));
+            if (!isGameEnded && timeSpent > maxTimerDuration) {
+                sceneManager.ChangeScene("EndGame");
+                isGameEnded = true;
+            }
         }
     }
 
@@ -39,9 +44,21 @@ public class GameManager : MonoBehaviour {
     public void OnItemRepaired(GameEventMessage msg) {
         nbItem--;
         ItemRepairedCountChangedEvent.Fire(new GameEventMessage(this, new Vector2Int(nbItem, totalItems)));
-        //if (nbItem == 0) {
-        //    Debug.Log("Ended");
-        //    sceneManager.ChangeScene("EndGame");
-        //}
+        if (nbItem == 0) {
+            Debug.Log("Ended");
+            sceneManager.ChangeScene("EndGame");
+        }
     }
+    public void OnPause(GameEventMessage msg) {
+        OnPauseValueChangedEvent.Fire(new GameEventMessage(this, true));
+    }
+
+    public void OnResume(GameEventMessage msg) {
+        OnPauseValueChangedEvent.Fire(new GameEventMessage(this, false));
+    }
+
+    public void OnPausedValueChanged(GameEventMessage msg) {
+        isPaused = (bool)msg.value;
+    }
+
 }

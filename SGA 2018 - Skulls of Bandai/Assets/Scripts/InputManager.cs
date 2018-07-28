@@ -40,7 +40,7 @@ public class InputManager : MonoBehaviour {
         if (wasPressingPauseKey) {
             if (Input.GetAxis("Pause") == 0) {
                 wasPressingPauseKey = false;
-                Debug.Log("Pasue end");
+                Debug.Log("Pause end");
             }
         } else {
             if (Input.GetAxis("Pause") > 0) {

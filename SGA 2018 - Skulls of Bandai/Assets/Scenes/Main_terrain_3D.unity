@@ -308,7 +308,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0.085376196, y: -0.00127621, z: -0.22976059}
---- !u!1001 &208459649
+--- !u!1001 &561331800
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -405,17 +405,12 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114964617688347920, guid: 4aeaf1a27dc594d41af3e6bf0ea66dd6,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114094176990960096, guid: 4aeaf1a27dc594d41af3e6bf0ea66dd6,
+    - target: {fileID: 114265179652023362, guid: 4aeaf1a27dc594d41af3e6bf0ea66dd6,
         type: 2}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114094176990960096, guid: 4aeaf1a27dc594d41af3e6bf0ea66dd6,
+    - target: {fileID: 114265179652023362, guid: 4aeaf1a27dc594d41af3e6bf0ea66dd6,
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
@@ -430,6 +425,16 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114094176990960096, guid: 4aeaf1a27dc594d41af3e6bf0ea66dd6,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094176990960096, guid: 4aeaf1a27dc594d41af3e6bf0ea66dd6,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114354135291066046, guid: 4aeaf1a27dc594d41af3e6bf0ea66dd6,
         type: 2}
       propertyPath: m_havePropertiesChanged
@@ -439,25 +444,6 @@ Prefab:
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265179652023362, guid: 4aeaf1a27dc594d41af3e6bf0ea66dd6,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265179652023362, guid: 4aeaf1a27dc594d41af3e6bf0ea66dd6,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224748133680778058, guid: 4aeaf1a27dc594d41af3e6bf0ea66dd6,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -426
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582617037817388, guid: 4aeaf1a27dc594d41af3e6bf0ea66dd6, type: 2}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4aeaf1a27dc594d41af3e6bf0ea66dd6, type: 2}
@@ -1218,18 +1204,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114290613844393204, guid: 605946b25d2f0fc41b471624ab40ccc2,
         type: 2}
-      propertyPath: iSDebuging
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114290613844393204, guid: 605946b25d2f0fc41b471624ab40ccc2,
-        type: 2}
       propertyPath: isDebuging
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114588246916697264, guid: 605946b25d2f0fc41b471624ab40ccc2,
         type: 2}
       propertyPath: maxTimerDuration
-      value: 60
+      value: 1e+22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
