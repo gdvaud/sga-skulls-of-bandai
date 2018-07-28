@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: 16b731bdc4ecf9246866091139e7f59c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: "Chaise c\xF4ne001"
+    100002: "Chaise c\xF4ne002"
+    100004: Chaise longue transate
+    100006: "chemin\xE9e"
+    100008: //RootNode
+    100010: Sofa salon
+    100012: Table jardin
+    100014: Table jardin002
+    100016: Table salon
+    100018: Table salon ovale
+    100020: Tableau Simon
+    100022: Tapis
+    400000: "Chaise c\xF4ne001"
+    400002: "Chaise c\xF4ne002"
+    400004: Chaise longue transate
+    400006: "chemin\xE9e"
+    400008: //RootNode
+    400010: Sofa salon
+    400012: Table jardin
+    400014: Table jardin002
+    400016: Table salon
+    400018: Table salon ovale
+    400020: Tableau Simon
+    400022: Tapis
+    2100000: 'Material #59'
+    2100002: 'Material #64'
+    2100004: 'Material #60'
+    2100006: 'Material #61'
+    2100008: 'Material #58'
+    2100010: TV screen
+    2100012: 'Material #63'
+    2100014: No Name
+    2300000: "Chaise c\xF4ne001"
+    2300002: "Chaise c\xF4ne002"
+    2300004: Chaise longue transate
+    2300006: "chemin\xE9e"
+    2300008: Sofa salon
+    2300010: Table jardin
+    2300012: Table jardin002
+    2300014: Table salon
+    2300016: Table salon ovale
+    2300018: Tableau Simon
+    2300020: Tapis
+    3300000: "Chaise c\xF4ne001"
+    3300002: "Chaise c\xF4ne002"
+    3300004: Chaise longue transate
+    3300006: "chemin\xE9e"
+    3300008: Sofa salon
+    3300010: Table jardin
+    3300012: Table jardin002
+    3300014: Table salon
+    3300016: Table salon ovale
+    3300018: Tableau Simon
+    3300020: Tapis
+    4300000: Chaise longue transate
+    4300002: Table salon
+    4300004: Tapis
+    4300006: Table jardin
+    4300008: "Chaise c\xF4ne001"
+    4300010: Sofa salon
+    4300012: "chemin\xE9e"
+    4300014: "Chaise c\xF4ne002"
+    4300016: Table jardin002
+    4300018: Tableau Simon
+    4300020: Table salon ovale
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

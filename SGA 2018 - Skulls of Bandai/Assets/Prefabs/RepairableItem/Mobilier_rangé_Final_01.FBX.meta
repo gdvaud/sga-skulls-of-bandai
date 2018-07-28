@@ -1,0 +1,208 @@
+fileFormatVersion: 2
+guid: b88b7d0c0746d3040acc1821a73c8ac4
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Book ensemble
+    100002: chaise cuisine
+    100004: chaise cuisine001
+    100006: chaise cuisine002
+    100008: chaise cuisine003
+    100010: chaise cuisine004
+    100012: chaise cuisine005
+    100014: Chaise longue 003
+    100016: Chaise longue 004
+    100018: Chaise longue 005
+    100020: Chaise longue 006
+    100022: Chaise longue 2
+    100024: "Etag\xE8re"
+    100026: Hautparleur 1
+    100028: Hautparleur 2
+    100030: lampe salon vertical
+    100032: //RootNode
+    100034: Table jardin petites
+    100036: Table jardin petites001
+    100038: Table jardin petites002
+    100040: Table jardin petites003
+    100042: Table jardin003
+    100044: TV
+    400000: Book ensemble
+    400002: chaise cuisine
+    400004: chaise cuisine001
+    400006: chaise cuisine002
+    400008: chaise cuisine003
+    400010: chaise cuisine004
+    400012: chaise cuisine005
+    400014: Chaise longue 003
+    400016: Chaise longue 004
+    400018: Chaise longue 005
+    400020: Chaise longue 006
+    400022: Chaise longue 2
+    400024: "Etag\xE8re"
+    400026: Hautparleur 1
+    400028: Hautparleur 2
+    400030: lampe salon vertical
+    400032: //RootNode
+    400034: Table jardin petites
+    400036: Table jardin petites001
+    400038: Table jardin petites002
+    400040: Table jardin petites003
+    400042: Table jardin003
+    400044: TV
+    2100000: 'Material #60'
+    2100002: 'Material #61'
+    2100004: 'Material #58'
+    2100006: 'Material #63'
+    2100008: 'Material #64'
+    2100010: 'Material #59'
+    2100012: TV screen
+    2100014: No Name
+    2300000: Book ensemble
+    2300002: chaise cuisine
+    2300004: chaise cuisine001
+    2300006: chaise cuisine002
+    2300008: chaise cuisine003
+    2300010: chaise cuisine004
+    2300012: chaise cuisine005
+    2300014: Chaise longue 003
+    2300016: Chaise longue 004
+    2300018: Chaise longue 005
+    2300020: Chaise longue 006
+    2300022: Chaise longue 2
+    2300024: "Etag\xE8re"
+    2300026: Hautparleur 1
+    2300028: Hautparleur 2
+    2300030: lampe salon vertical
+    2300032: Table jardin petites
+    2300034: Table jardin petites001
+    2300036: Table jardin petites002
+    2300038: Table jardin petites003
+    2300040: Table jardin003
+    2300042: TV
+    3300000: Book ensemble
+    3300002: chaise cuisine
+    3300004: chaise cuisine001
+    3300006: chaise cuisine002
+    3300008: chaise cuisine003
+    3300010: chaise cuisine004
+    3300012: chaise cuisine005
+    3300014: Chaise longue 003
+    3300016: Chaise longue 004
+    3300018: Chaise longue 005
+    3300020: Chaise longue 006
+    3300022: Chaise longue 2
+    3300024: "Etag\xE8re"
+    3300026: Hautparleur 1
+    3300028: Hautparleur 2
+    3300030: lampe salon vertical
+    3300032: Table jardin petites
+    3300034: Table jardin petites001
+    3300036: Table jardin petites002
+    3300038: Table jardin petites003
+    3300040: Table jardin003
+    3300042: TV
+    4300000: Chaise longue 2
+    4300002: "Etag\xE8re"
+    4300004: Table jardin petites
+    4300006: Table jardin petites001
+    4300008: Chaise longue 003
+    4300010: Chaise longue 004
+    4300012: Chaise longue 005
+    4300014: Table jardin petites002
+    4300016: Table jardin petites003
+    4300018: lampe salon vertical
+    4300020: chaise cuisine
+    4300022: Hautparleur 1
+    4300024: Table jardin003
+    4300026: Hautparleur 2
+    4300028: TV
+    4300030: chaise cuisine001
+    4300032: chaise cuisine002
+    4300034: Chaise longue 006
+    4300036: Book ensemble
+    4300038: chaise cuisine003
+    4300040: chaise cuisine004
+    4300042: chaise cuisine005
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

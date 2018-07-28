@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: a6677cf61c492b94da3c7fb241374857
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: chaise cuisine a ranger00
+    100002: chaise cuisine a ranger01
+    100004: chaise cuisine a ranger02
+    100006: chaise cuisine a ranger03
+    100008: chaise cuisine a ranger04
+    100010: chaise cuisine a ranger05
+    100012: Chaise longue 006 a ranger
+    100014: Chaise longue 007 a ranger
+    100016: Chaise longue 008 a ranger
+    100018: Chaise longue 009 a ranger
+    100020: Chaise longue 009 a ranger001
+    100022: "Etag\xE8re a ranger"
+    100024: Hautparleur 1 a ranger
+    100026: Hautparleur 2 a ranger
+    100028: lampe salon vertical ranger
+    100030: //RootNode
+    100032: Table jardin a ranger
+    100034: Table jardin petites a ranger
+    100036: Table jardin petites005
+    100038: Table jardin petites006
+    100040: Table jardin petites007
+    100042: TV a ranger
+    400000: chaise cuisine a ranger00
+    400002: chaise cuisine a ranger01
+    400004: chaise cuisine a ranger02
+    400006: chaise cuisine a ranger03
+    400008: chaise cuisine a ranger04
+    400010: chaise cuisine a ranger05
+    400012: Chaise longue 006 a ranger
+    400014: Chaise longue 007 a ranger
+    400016: Chaise longue 008 a ranger
+    400018: Chaise longue 009 a ranger
+    400020: Chaise longue 009 a ranger001
+    400022: "Etag\xE8re a ranger"
+    400024: Hautparleur 1 a ranger
+    400026: Hautparleur 2 a ranger
+    400028: lampe salon vertical ranger
+    400030: //RootNode
+    400032: Table jardin a ranger
+    400034: Table jardin petites a ranger
+    400036: Table jardin petites005
+    400038: Table jardin petites006
+    400040: Table jardin petites007
+    400042: TV a ranger
+    2100000: 'Material #60'
+    2100002: 'Material #61'
+    2100004: 'Material #58'
+    2100006: 'Material #64'
+    2100008: 'Material #59'
+    2100010: TV screen
+    2100012: 'Material #63'
+    2300000: chaise cuisine a ranger00
+    2300002: chaise cuisine a ranger01
+    2300004: chaise cuisine a ranger02
+    2300006: chaise cuisine a ranger03
+    2300008: chaise cuisine a ranger04
+    2300010: chaise cuisine a ranger05
+    2300012: Chaise longue 006 a ranger
+    2300014: Chaise longue 007 a ranger
+    2300016: Chaise longue 008 a ranger
+    2300018: Chaise longue 009 a ranger
+    2300020: Chaise longue 009 a ranger001
+    2300022: "Etag\xE8re a ranger"
+    2300024: Hautparleur 1 a ranger
+    2300026: Hautparleur 2 a ranger
+    2300028: lampe salon vertical ranger
+    2300030: Table jardin a ranger
+    2300032: Table jardin petites a ranger
+    2300034: Table jardin petites005
+    2300036: Table jardin petites006
+    2300038: Table jardin petites007
+    2300040: TV a ranger
+    3300000: chaise cuisine a ranger00
+    3300002: chaise cuisine a ranger01
+    3300004: chaise cuisine a ranger02
+    3300006: chaise cuisine a ranger03
+    3300008: chaise cuisine a ranger04
+    3300010: chaise cuisine a ranger05
+    3300012: Chaise longue 006 a ranger
+    3300014: Chaise longue 007 a ranger
+    3300016: Chaise longue 008 a ranger
+    3300018: Chaise longue 009 a ranger
+    3300020: Chaise longue 009 a ranger001
+    3300022: "Etag\xE8re a ranger"
+    3300024: Hautparleur 1 a ranger
+    3300026: Hautparleur 2 a ranger
+    3300028: lampe salon vertical ranger
+    3300030: Table jardin a ranger
+    3300032: Table jardin petites a ranger
+    3300034: Table jardin petites005
+    3300036: Table jardin petites006
+    3300038: Table jardin petites007
+    3300040: TV a ranger
+    4300000: Chaise longue 006 a ranger
+    4300002: Chaise longue 007 a ranger
+    4300004: Chaise longue 008 a ranger
+    4300006: Chaise longue 009 a ranger
+    4300008: chaise cuisine a ranger00
+    4300010: chaise cuisine a ranger01
+    4300012: chaise cuisine a ranger02
+    4300014: chaise cuisine a ranger03
+    4300016: chaise cuisine a ranger04
+    4300018: chaise cuisine a ranger05
+    4300020: Chaise longue 009 a ranger001
+    4300022: TV a ranger
+    4300024: Table jardin petites a ranger
+    4300026: Table jardin petites005
+    4300028: Table jardin petites006
+    4300030: Table jardin petites007
+    4300032: Hautparleur 2 a ranger
+    4300034: Hautparleur 1 a ranger
+    4300036: "Etag\xE8re a ranger"
+    4300038: lampe salon vertical ranger
+    4300040: Table jardin a ranger
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
