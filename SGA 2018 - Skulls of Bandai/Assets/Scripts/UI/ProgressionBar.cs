@@ -12,7 +12,7 @@ public class ProgressionBar : MonoBehaviour {
 
     public void OnItemRepairedChanged(GameEventMessage msg) {
         Vector2Int values = (Vector2Int)msg.value;
-        float progression = ((float)values.x) / values.y;
+        float progression = (values.y -((float)values.x)) / values.y;
 
         Vector2 pos = bob.anchoredPosition;
         pos.x = (maxPos - minPos) * progression;

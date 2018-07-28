@@ -41,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1888648384835908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.0552416, y: 8.942186, z: -13.026684}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -191,7 +191,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae326626c8c44249aa4f667551e7eb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTimerDuration: 10
+  nbItem: 0
+  totalItems: 0
+  maxTimerDuration: 150
   ItemRepairedCountChangedEvent: {fileID: 11400000, guid: 1d36ea75f2cfd574a84de1d7eea7e249,
     type: 2}
   OnTimerValueChangedEvent: {fileID: 11400000, guid: 4a639f45989dd8c47834f53bff5e7abd,

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-    public int nbItem { get; set; }
-    public int totalItems { get; set; }
+    public int nbItem;
+    public int totalItems;
     [SerializeField] private float maxTimerDuration = 60f;
     private float timeSpent;
     private bool isGameEnded;
@@ -15,13 +15,16 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private GameEvent OnPauseValueChangedEvent;
     private bool isPaused;
 
-    // Use this for initialization
-    void Start() {
-        sceneManager = GetComponent<SceneManagerBase>();
+    private void Awake() {
         timeSpent = 0f;
         nbItem = 0;
         totalItems = 0;
         isGameEnded = false;
+    }
+
+    // Use this for initialization
+    void Start() {
+        sceneManager = GetComponent<SceneManagerBase>();
         isPaused = false;
     }
 
@@ -39,6 +42,7 @@ public class GameManager : MonoBehaviour {
     public void OnItemSpawned(GameEventMessage msg) {
         nbItem++;
         totalItems++;
+        Debug.Log("Spawned");
     }
 
     public void OnItemRepaired(GameEventMessage msg) {
