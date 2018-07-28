@@ -1620,17 +1620,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityMyEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!135 &189397482
-SphereCollider:
+--- !u!136 &189397482
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 189397476}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.07
+  m_Radius: 0.047813848
+  m_Height: 0.15
+  m_Direction: 2
   m_Center: {x: -0.0028925473, y: 0.0000000073294113, z: 0.0015145415}
 --- !u!1001 &208459649
 Prefab:
