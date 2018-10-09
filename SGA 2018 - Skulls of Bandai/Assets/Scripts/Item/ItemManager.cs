@@ -16,7 +16,6 @@ public class ItemManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Debug.Log("Start");
         state = ItemState.DESTROYED;
         reperationStartTime = 0;
         jauge.SetActive(false);

@@ -9631,6 +9631,16 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114290613844393204, guid: 605946b25d2f0fc41b471624ab40ccc2,
+        type: 2}
+      propertyPath: isDebuging
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114290613844393204, guid: 605946b25d2f0fc41b471624ab40ccc2,
+        type: 2}
+      propertyPath: firstSceneName
+      value: Menu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
   m_IsPrefabAsset: 0

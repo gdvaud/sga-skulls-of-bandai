@@ -16,10 +16,7 @@ public class GameManager : MonoBehaviour {
     private bool isPaused;
 
     private void Awake() {
-        timeSpent = 0f;
-        nbItem = 0;
-        totalItems = 0;
-        isGameEnded = false;
+        InitGame();
     }
 
     // Use this for initialization
@@ -29,10 +26,10 @@ public class GameManager : MonoBehaviour {
     }
 
     private void Update() {
-        if (!isPaused) {
+        if (!isPaused && !isGameEnded) {
             timeSpent += Time.deltaTime;
             OnTimerValueChangedEvent.Fire(new GameEventMessage(this, new Vector2(timeSpent, maxTimerDuration)));
-            if (!isGameEnded && timeSpent > maxTimerDuration) {
+            if (timeSpent > maxTimerDuration) {
                 sceneManager.ChangeScene("EndGame");
                 isGameEnded = true;
             }
@@ -42,7 +39,7 @@ public class GameManager : MonoBehaviour {
     public void OnItemSpawned(GameEventMessage msg) {
         nbItem++;
         totalItems++;
-        Debug.Log("Spawned");
+        //Debug.Log("Spawned");
     }
 
     public void OnItemRepaired(GameEventMessage msg) {
@@ -63,6 +60,13 @@ public class GameManager : MonoBehaviour {
 
     public void OnPausedValueChanged(GameEventMessage msg) {
         isPaused = (bool)msg.value;
+    }
+
+    public void InitGame() {
+        timeSpent = 0f;
+        nbItem = 0;
+        totalItems = 0;
+        isGameEnded = false;
     }
 
 }

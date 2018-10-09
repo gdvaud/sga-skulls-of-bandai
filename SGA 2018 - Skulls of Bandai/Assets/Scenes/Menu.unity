@@ -255,9 +255,30 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Cinematique
       objectReference: {fileID: 0}
+    - target: {fileID: 114318503732020024, guid: c62d0ef087730644aad3dfcafc67af3c,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 402742513}
+    - target: {fileID: 114318503732020024, guid: c62d0ef087730644aad3dfcafc67af3c,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnQuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 114318503732020024, guid: c62d0ef087730644aad3dfcafc67af3c,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c62d0ef087730644aad3dfcafc67af3c, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &402742513 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114382251330725720, guid: c62d0ef087730644aad3dfcafc67af3c,
+    type: 2}
+  m_PrefabInternal: {fileID: 402742512}
+  m_Script: {fileID: 11500000, guid: 4a35c55f24176a247ad0d081fd87525d, type: 3}
 --- !u!1 &414248090
 GameObject:
   m_ObjectHideFlags: 0

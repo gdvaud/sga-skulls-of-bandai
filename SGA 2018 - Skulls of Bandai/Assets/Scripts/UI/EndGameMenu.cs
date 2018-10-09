@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class EndGameMenu : MonoBehaviour {
 
@@ -9,14 +8,15 @@ public class EndGameMenu : MonoBehaviour {
     [SerializeField] private GameObject lose;
     private GameManager gm;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start() {
         gm = FindObjectOfType<GameManager>();
+        lose.SetActive(false);
+        win.SetActive(false);
+
         if (gm.nbItem == 0) {
             win.SetActive(true);
-            lose.SetActive(false);
         } else {
-            win.SetActive(false);
             lose.SetActive(true);
         }
     }

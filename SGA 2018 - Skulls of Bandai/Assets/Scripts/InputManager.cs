@@ -26,13 +26,13 @@ public class InputManager : MonoBehaviour {
         if (wasPressingInteractionKey) {
             if (Input.GetAxis("Interact") == 0) {
                 wasPressingInteractionKey = false;
-                Debug.Log("Interaction End");
+                //Debug.Log("Interaction End");
                 OnInteractionEndedEvent.Fire(new GameEventMessage(this));
             }
         } else {
             if (Input.GetAxis("Interact") > 0) {
                 wasPressingInteractionKey = true;
-                Debug.Log("Interaction Start");
+                //Debug.Log("Interaction Start");
                 OnInteractionStartedEvent.Fire(new GameEventMessage(this));
             }
         }
@@ -40,12 +40,12 @@ public class InputManager : MonoBehaviour {
         if (wasPressingPauseKey) {
             if (Input.GetAxis("Pause") == 0) {
                 wasPressingPauseKey = false;
-                Debug.Log("Pause end");
+                //Debug.Log("Pause end");
             }
         } else {
             if (Input.GetAxis("Pause") > 0) {
                 wasPressingPauseKey = true;
-                Debug.Log("Pause Start");
+                //Debug.Log("Pause Start");
                 OnPausingEvent.Fire(new GameEventMessage(this));
             }
         }
