@@ -6,33 +6,18 @@ using UnityEngine.UI;
 
 public class SceneManagerAsynchrone : SceneManagerBase {
 
-    [SerializeField] private bool isDebuging = false;
-    [SerializeField] private CanvasGroup loadingCanvas = null;
+    private const float CANVAS_ALPHA_MIN = 0;
+    private const float CANVAS_ALPHA_MAX = 1;
+    private const int NULL_SCENE_ID = -1;
+
+    [Header("Async parameters")]
     [SerializeField] private Image loadingProgressBar = null;
-    [SerializeField] private GameEvent sceneLoadStartedEvent;
-    [SerializeField] private GameEvent sceneLoadEndedEvent;
-    [SerializeField] private string firstSceneName;
     [SerializeField] private float fadeSpeed = 1;
 
     private int sceneLoaded = NULL_SCENE_ID;
 
-    private const float CANVAS_ALPHA_MIN = 0;
-    private const float CANVAS_ALPHA_MAX = 1;
-
-    private const int NULL_SCENE_ID = -1;
-
-    // Use this for initialization
-    void Start() {
-        isLoading = false;
-        if (!isDebuging) {
-            ChangeScene(SceneUtility.GetBuildIndexByScenePath(firstSceneName));
-        }
-    }
-
-    private IEnumerator FadeInStartLoadingScene(int sceneId) {
-        isLoading = true;
-        sceneLoadStartedEvent.Fire(new GameEventMessage(this));
-
+    private IEnumerator LoadScene(int sceneId) {
+        state = SceneLoadingState.FADE_IN;
         if (loadingCanvas != null) {
             while (loadingCanvas.alpha < CANVAS_ALPHA_MAX) {
                 loadingCanvas.alpha += fadeSpeed * Time.deltaTime;
@@ -43,11 +28,13 @@ public class SceneManagerAsynchrone : SceneManagerBase {
             }
         }
 
+        state = SceneLoadingState.UNLOADING;
         if (sceneLoaded != NULL_SCENE_ID) {
             yield return SceneManager.UnloadSceneAsync(sceneLoaded);
         }
         sceneLoaded = sceneId;
 
+        state = SceneLoadingState.LOADING;
         AsyncOperation sceneLoading = SceneManager.LoadSceneAsync(sceneId, LoadSceneMode.Additive);
         while (!sceneLoading.isDone) {
             if (loadingProgressBar != null) {
@@ -56,11 +43,8 @@ public class SceneManagerAsynchrone : SceneManagerBase {
             yield return null;
         }
 
+        state = SceneLoadingState.FADE_OUT;
         SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(sceneId));
-        StartCoroutine(FadeOutEndLoadingScene());
-    }
-
-    private IEnumerator FadeOutEndLoadingScene() {
         if (loadingCanvas != null) {
             while (loadingCanvas.alpha > CANVAS_ALPHA_MIN) {
                 loadingCanvas.alpha -= fadeSpeed * Time.deltaTime;
@@ -69,12 +53,11 @@ public class SceneManagerAsynchrone : SceneManagerBase {
                 yield return null;
             }
         }
-
         if (loadingProgressBar != null) {
             loadingProgressBar.fillAmount = 0;
         }
-        sceneLoadEndedEvent.Fire(new GameEventMessage(this));
-        isLoading = false;
+
+        state = SceneLoadingState.LOADED;
     }
 
     public override void ChangeScene(string name) {
@@ -82,8 +65,9 @@ public class SceneManagerAsynchrone : SceneManagerBase {
     }
 
     public override void ChangeScene(int sceneId) {
-        if (!isLoading) {
-            StartCoroutine(FadeInStartLoadingScene(sceneId));
+        if (state == SceneLoadingState.LOADED) {
+            StartCoroutine(LoadScene(sceneId));
         }
     }
+
 }

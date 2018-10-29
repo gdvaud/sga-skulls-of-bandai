@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [System.Serializable]
-public class UnityMyEvent : UnityEvent<EventMessage>
+public class MyUnityEvent : UnityEvent<EventMessage>
 {
 
 }
@@ -13,7 +13,7 @@ public class GameEventListener : MonoBehaviour {
     [SerializeField]
     private GameEvent[] gameEvents;
     [SerializeField]
-    private UnityMyEvent myEvent;
+    private MyUnityEvent myEvent;
     
     private void OnEnable()
     {
