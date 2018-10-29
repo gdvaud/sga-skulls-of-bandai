@@ -19,7 +19,7 @@ public class GameEvent : ScriptableObject {
         listeners.Remove(eventListener);
     }
 
-    public void Fire(GameEventMessage message)
+    public void Fire(EventMessage message)
     {
         message.GameEventSender = this;
         foreach (GameEventListener listener in listeners)

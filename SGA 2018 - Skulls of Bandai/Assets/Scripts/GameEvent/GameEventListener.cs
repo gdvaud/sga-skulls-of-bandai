@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [System.Serializable]
-public class UnityMyEvent : UnityEvent<GameEventMessage>
+public class UnityMyEvent : UnityEvent<EventMessage>
 {
 
 }
@@ -27,7 +27,7 @@ public class GameEventListener : MonoBehaviour {
             evt.RemoveListerner(this);
     }
 
-    public void SendEvent(GameEventMessage message)
+    public void SendEvent(EventMessage message)
     {
         myEvent.Invoke(message);
     }
