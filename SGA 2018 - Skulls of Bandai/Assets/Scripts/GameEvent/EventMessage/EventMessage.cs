@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EventMessage {
 
@@ -12,7 +10,24 @@ public class EventMessage {
         get; set;
     }
 
-    public EventMessage(Component gameEvent) {
-        EventSender = gameEvent;
+    public EventMessage() : this(null) { }
+
+    public EventMessage(Component sender) {
+        EventSender = sender;
+    }
+}
+
+public class EventMessage<T> : EventMessage {
+
+    public T Value {
+        get; private set;
+    }
+
+    public EventMessage() : this(null, default(T)) { }
+
+    public EventMessage(Component sender) : this(sender, default(T)) { }
+
+    public EventMessage(Component sender, T value) : base(sender) {
+        Value = value;
     }
 }
