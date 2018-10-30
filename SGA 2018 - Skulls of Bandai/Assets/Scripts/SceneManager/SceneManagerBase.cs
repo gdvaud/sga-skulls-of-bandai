@@ -26,9 +26,20 @@ public abstract class SceneManagerBase : Manager {
     }
 
     protected void Start() {
+        Debug.Log("Started " + isDebuging);
         dicOnStateChangedEvents = new Dictionary<SceneLoadingState, GameEvent>();
         UpdateOnStateChangedEvents();
-        ChangeScene(initialScene);
+        if (!isDebuging) {
+            ChangeScene(initialScene);
+        } else {
+            OnSceneLoaded();
+        }
+    }
+
+    protected void OnSceneLoaded() {
+        if (loadingCanvas != null) {
+            loadingCanvas.alpha = 0;
+        }
     }
 
     public abstract void ChangeScene(string name);

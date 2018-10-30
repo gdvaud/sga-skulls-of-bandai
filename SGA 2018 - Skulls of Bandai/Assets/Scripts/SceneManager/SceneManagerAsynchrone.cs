@@ -58,6 +58,7 @@ public class SceneManagerAsynchrone : SceneManagerBase {
         }
 
         state = SceneLoadingState.LOADED;
+        OnSceneLoaded();
     }
 
     public override void ChangeScene(string name) {
@@ -70,4 +71,7 @@ public class SceneManagerAsynchrone : SceneManagerBase {
         }
     }
 
+    //protected new void OnSceneLoaded() {
+    //    base.OnSceneLoaded();
+    //}
 }

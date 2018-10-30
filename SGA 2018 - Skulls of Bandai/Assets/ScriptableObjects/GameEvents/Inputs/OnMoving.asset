@@ -8,9 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4c8c397d47878f4ebb93773886e6ec2, type: 3}
-  m_Name: PS4InputControllerScheme
+  m_Script: {fileID: 11500000, guid: 362f8f65eb34aaa4fad9d21d4c98d989, type: 3}
+  m_Name: OnMoving
   m_EditorClassIdentifier: 
-  name: PS4
-  interactionKey: 331
-  pauseKey: 339
+  eventName: GameEvent

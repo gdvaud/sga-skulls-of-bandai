@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c8c397d47878f4ebb93773886e6ec2, type: 3}
   m_Name: XBoxInputControllerScheme
   m_EditorClassIdentifier: 
-  name: 
-  interactionKey: 0
-  pauseKey: 0
+  name: XBox
+  interactionKey: 330
+  pauseKey: 337
