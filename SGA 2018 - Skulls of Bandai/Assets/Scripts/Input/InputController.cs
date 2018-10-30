@@ -34,18 +34,18 @@ public class InputController : Manager {
         // =========================
 
         // === Direction 
-        Vector2 direction = Vector2.zero;
-        direction.x = Input.GetAxisRaw("Vertical");
-        direction.y = Input.GetAxisRaw("Horizontal");
-        //OnMoving(direction);
+        Vector3 direction = Vector3.zero;
+        direction.z = Input.GetAxisRaw("Vertical");
+        direction.x = Input.GetAxisRaw("Horizontal");
+        OnMoving(direction);
         // =========================
     }
 
-    public void OnMoving(Vector2 direction) {
+    public void OnMoving(Vector3 direction) {
         if (onMovingEvent != null) {
-            onMovingEvent.Fire(new EventMessage<Vector2>(this, direction));
+            onMovingEvent.Fire(new EventMessage<Vector3>(this, direction));
         } else {
-
+            Debug.LogWarning("OnMoving event not assigned");
         }
     }
 
@@ -53,7 +53,7 @@ public class InputController : Manager {
         if (onInteractionEvent != null) {
             onInteractionEvent.Fire(new EventMessage<bool>(this, started));
         } else {
-
+            Debug.LogWarning("OnInteraction event not assigned");
         }
     }
 
@@ -61,7 +61,7 @@ public class InputController : Manager {
         if (onPauseEvent != null) {
             onPauseEvent.Fire(new EventMessage(this));
         } else {
-
+            Debug.LogWarning("OnPause event not assigned");
         }
     }
 
@@ -69,7 +69,7 @@ public class InputController : Manager {
         if (onQuitEvent != null) {
             onQuitEvent.Fire(new EventMessage(this));
         } else {
-
+            Debug.LogWarning("OnQuit event not assigned");
         }
     }
 
