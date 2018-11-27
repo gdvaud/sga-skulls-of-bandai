@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 95838188522770176}
   - component: {fileID: 114874942156934178}
   - component: {fileID: 114407912571093584}
+  - component: {fileID: 114330246033304392}
+  - component: {fileID: 114614799864975140}
   m_Layer: 0
   m_Name: SimplePlayer
   m_TagString: Player
@@ -951,7 +953,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1037835373721094}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.6, y: 0, z: 3.9}
+  m_LocalPosition: {x: 4.5, y: 0, z: 17.7}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4933389082444518}
@@ -1212,6 +1214,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114330246033304392
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1037835373721094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 179f728412c501a449d4743197cbc642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvents:
+  - {fileID: 11400000, guid: a23d62d4cfc6e7c4b86cb22284fb8731, type: 2}
+  myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114874942156934178}
+        m_MethodName: OnMoveAction
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: MyUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &114407912571093584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1223,6 +1253,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0475a034c70e947478efcb3f8e0e7570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114614799864975140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1037835373721094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 179f728412c501a449d4743197cbc642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvents:
+  - {fileID: 11400000, guid: 78204008af8e83445ae58f70024e8a64, type: 2}
+  myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114874942156934178}
+        m_MethodName: OnInteraction
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: MyUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &114874942156934178
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1235,6 +1293,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 400
+  interactionRange: 2
+  interactionMask:
+    serializedVersion: 2
+    m_Bits: 4096
 --- !u!136 &136909354356312642
 CapsuleCollider:
   m_ObjectHideFlags: 1

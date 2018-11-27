@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerManager : Manager {
 
@@ -10,14 +8,10 @@ public class PlayerManager : Manager {
 
     private Item interactingItem;
 
-    private Rigidbody rigidbody;
-    private Animator animator;
-    private InventoryManager inventory;
+    public InventoryManager Inventory { get; private set; }
 
     private void Start() {
-        rigidbody = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>();
-        inventory = GetComponent<InventoryManager>();
+        Inventory = GetComponent<InventoryManager>();
         interactingItem = null;
     }
 
@@ -27,25 +21,37 @@ public class PlayerManager : Manager {
             Vector3 target = transform.position + direction;
 
             transform.LookAt(target, transform.up);
-            rigidbody.velocity = direction * movementSpeed * Time.deltaTime;
-            animator.SetFloat("MoveSpeed", direction.magnitude);
+            GetComponent<Rigidbody>().velocity = direction * movementSpeed * Time.deltaTime;
+            GetComponent<Animator>().SetFloat("MoveSpeed", direction.magnitude);
         } else {
             Debug.LogWarning("OnMoveAction called with a msg not of type EventMessage<Vector3> instead " + msg.GetType());
         }
     }
 
-    public void OnInteraction(bool started) {
-        if (interactingItem == null && started) {
-            Collider[] colliders = Physics.OverlapSphere(transform.position, interactionRange, interactionMask);
-            if (colliders.Length > 0) {
-                interactingItem = colliders[0].gameObject.GetComponent<Item>();
+    public void OnInteraction(EventMessage msg) {
+        if (msg is EventMessage<bool>) {
+            bool started = ((EventMessage<bool>)msg).Value;
+            if (interactingItem == null && started) {
+                Collider[] colliders = Physics.OverlapSphere(transform.position, interactionRange, interactionMask);
+                if (colliders.Length > 0) {
+                    interactingItem = colliders[0].gameObject.GetComponent<Item>();
+                    Debug.Log("Interacting");
+                    // TODO
+                } else {
+                    Debug.LogWarning("No interactable item in range");
+                }
+            } else if (interactingItem != null && !started) {
+                interactingItem.EndInteraction();
+                interactingItem = null;
             } else {
-                Debug.LogWarning("No interactable item in range");
+                Debug.LogWarning("Already interacting");
             }
-        } else if (interactingItem != null && !started) {
-            interactingItem = null;
         } else {
-            Debug.LogWarning("Already interacting");
+            Debug.LogWarning("OnMoveAction called with a msg not of type EventMessage<bool> instead " + msg.GetType());
         }
+    }
+
+    public void ItemInteractionFinished() {
+        interactingItem = null;
     }
 }

@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class ItemManager : Manager {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private List<Item> items;
+
+    public void AddItem(Item item) {
+        if (!items.Contains(item)) {
+            items.Add(item);
+        }
+    }
+
+    public void RemoveItem(Item item) {
+        if (items.Contains(item)) {
+            items.Remove(item);
+        }
+    }
 }

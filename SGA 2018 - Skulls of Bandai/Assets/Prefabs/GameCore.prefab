@@ -19,14 +19,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4009606483582090}
+  - component: {fileID: 114205132461447048}
   - component: {fileID: 114290613844393204}
-  - component: {fileID: 114678738038034730}
-  - component: {fileID: 114588246916697264}
-  - component: {fileID: 114413201944382840}
-  - component: {fileID: 114466955445229326}
-  - component: {fileID: 114672954243307360}
-  - component: {fileID: 114056795015978396}
-  - component: {fileID: 114587448175260968}
+  - component: {fileID: 114651253491337916}
+  - component: {fileID: 114162638349264230}
   m_Layer: 0
   m_Name: GameCore
   m_TagString: Untagged
@@ -47,7 +43,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114056795015978396
+--- !u!114 &114162638349264230
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,26 +51,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1888648384835908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 179f728412c501a449d4743197cbc642, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f91666f6c7340641a263ddadd86fc40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvents:
-  - {fileID: 11400000, guid: cb1e050614ec77a4cb855e031f0abd74, type: 2}
-  myEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114588246916697264}
-        m_MethodName: OnResume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityMyEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &114205132461447048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1888648384835908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b5936cfe7846249bfca8f2f073cf8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114290613844393204
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -86,17 +76,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fe5d0b76ccc2b4898bf08a9e6b8680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLoading: 0
-  isDebuging: 0
+  isDebuging: 1
   loadingCanvas: {fileID: 0}
+  initialScene: Menu
+  onStateChangedEvents: []
   loadingProgressBar: {fileID: 0}
-  sceneLoadStartedEvent: {fileID: 11400000, guid: ebd576c4d9838694db606a499b55a71d,
-    type: 2}
-  sceneLoadEndedEvent: {fileID: 11400000, guid: 69bd4480109289e46a9757fb1fab5d79,
-    type: 2}
-  firstSceneName: Menu
   fadeSpeed: 1
---- !u!114 &114413201944382840
+--- !u!114 &114651253491337916
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,144 +90,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1888648384835908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 179f728412c501a449d4743197cbc642, type: 3}
+  m_Script: {fileID: 11500000, guid: 0cae219232cc61a42b1ce607b9bdb95f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvents:
-  - {fileID: 11400000, guid: ddf6930940f853b4ba42b30f2faf0b51, type: 2}
-  myEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114588246916697264}
-        m_MethodName: OnItemRepaired
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityMyEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &114466955445229326
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1888648384835908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 179f728412c501a449d4743197cbc642, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvents:
-  - {fileID: 11400000, guid: 7fb36082dbd2f0d4fbe3a150190037a9, type: 2}
-  myEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114588246916697264}
-        m_MethodName: OnItemSpawned
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityMyEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &114587448175260968
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1888648384835908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 179f728412c501a449d4743197cbc642, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvents:
-  - {fileID: 11400000, guid: c2326213fd56cda42ae562329d2d6fb9, type: 2}
-  myEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114588246916697264}
-        m_MethodName: OnPausedValueChanged
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityMyEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &114588246916697264
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1888648384835908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fae326626c8c44249aa4f667551e7eb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nbItem: 0
-  totalItems: 0
-  maxTimerDuration: 150
-  ItemRepairedCountChangedEvent: {fileID: 11400000, guid: 1d36ea75f2cfd574a84de1d7eea7e249,
-    type: 2}
-  OnTimerValueChangedEvent: {fileID: 11400000, guid: 4a639f45989dd8c47834f53bff5e7abd,
-    type: 2}
-  OnPauseValueChangedEvent: {fileID: 11400000, guid: c2326213fd56cda42ae562329d2d6fb9,
-    type: 2}
---- !u!114 &114672954243307360
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1888648384835908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 179f728412c501a449d4743197cbc642, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvents:
-  - {fileID: 11400000, guid: 3a6283e512e1b9b47a82ee17ceaf3ef5, type: 2}
-  myEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114588246916697264}
-        m_MethodName: OnPause
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityMyEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &114678738038034730
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1888648384835908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 171063863f984c24b95b5f7c0c8f3e87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractionStartedEvent: {fileID: 11400000, guid: f4ceacaaa90030b4ba4522cb9385cada,
-    type: 2}
-  OnInteractionEndedEvent: {fileID: 11400000, guid: c81c2d82ff6a57943b1d06d9f04410e0,
-    type: 2}
-  OnMovingEvent: {fileID: 11400000, guid: 3fef70fb469eb7749883bbcd333a6601, type: 2}
-  OnPausingEvent: {fileID: 11400000, guid: 3a6283e512e1b9b47a82ee17ceaf3ef5, type: 2}
+  schemes: {fileID: 11400000, guid: 7c2b6938a27558b4fb232627b5ff5cfc, type: 2}
+  onMovingEvent: {fileID: 11400000, guid: a23d62d4cfc6e7c4b86cb22284fb8731, type: 2}
+  onInteractionEvent: {fileID: 11400000, guid: 78204008af8e83445ae58f70024e8a64, type: 2}
+  onPauseEvent: {fileID: 11400000, guid: d3d728b62c00c724790deb57bea16834, type: 2}
+  onQuitEvent: {fileID: 11400000, guid: bba90d01672a3e74880cdd70c7bf1826, type: 2}

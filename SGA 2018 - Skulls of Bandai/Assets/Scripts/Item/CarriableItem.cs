@@ -1,16 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class CarriableItem : MonoBehaviour {
+public class CarriableItem : Item {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    protected override void OnInteractîonFinished() {
+        Debug.Log("Finished");
+        if (!playerInteracting.Inventory.AddItem(this)) {
+            Debug.LogWarning("Inventory is full");
+        }
+        playerInteracting.ItemInteractionFinished();
+    }
+
+    public override void StartInteraction(PlayerManager player) {
+        if (!IsInteracting() && !player.Inventory.IsFull()) {
+            playerInteracting = player;
+        }
+    }
 }

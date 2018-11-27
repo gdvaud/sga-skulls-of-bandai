@@ -1,16 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿public class RepairableItem : Item {
 
-public class RepairableItem : MonoBehaviour {
+    protected override void OnInteractîonFinished() {
+        playerInteracting.ItemInteractionFinished();
+    }
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public override void StartInteraction(PlayerManager player) {
+        if (!IsInteracting()) {
+            playerInteracting = player;
+        }
+    }
 }

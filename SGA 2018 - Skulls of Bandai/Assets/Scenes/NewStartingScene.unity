@@ -113,6 +113,58 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &1050969092
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114290613844393204, guid: 605946b25d2f0fc41b471624ab40ccc2,
+        type: 2}
+      propertyPath: loadingCanvas
+      value: 
+      objectReference: {fileID: 1386709651}
+    - target: {fileID: 114290613844393204, guid: 605946b25d2f0fc41b471624ab40ccc2,
+        type: 2}
+      propertyPath: loadingProgressBar
+      value: 
+      objectReference: {fileID: 1312241916}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1312241915
 Prefab:
   m_ObjectHideFlags: 0
@@ -373,98 +425,3 @@ CanvasGroup:
   m_CorrespondingSourceObject: {fileID: 225959910850127990, guid: 523820a85d8531143b004b06c6f8c8ad,
     type: 2}
   m_PrefabInternal: {fileID: 1312241915}
---- !u!1001 &1541724400
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4009606483582090, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114290613844393204, guid: 605946b25d2f0fc41b471624ab40ccc2,
-        type: 2}
-      propertyPath: loadingCanvas
-      value: 
-      objectReference: {fileID: 1386709651}
-    - target: {fileID: 114290613844393204, guid: 605946b25d2f0fc41b471624ab40ccc2,
-        type: 2}
-      propertyPath: loadingProgressBar
-      value: 
-      objectReference: {fileID: 1312241916}
-    - target: {fileID: 114290613844393204, guid: 605946b25d2f0fc41b471624ab40ccc2,
-        type: 2}
-      propertyPath: firstSceneName
-      value: Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 114290613844393204, guid: 605946b25d2f0fc41b471624ab40ccc2,
-        type: 2}
-      propertyPath: isDebuging
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114290613844393204, guid: 605946b25d2f0fc41b471624ab40ccc2,
-        type: 2}
-      propertyPath: initialScene
-      value: Menu
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114678738038034730, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
-    - {fileID: 114588246916697264, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
-    - {fileID: 114413201944382840, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
-    - {fileID: 114466955445229326, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
-    - {fileID: 114672954243307360, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
-    - {fileID: 114056795015978396, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
-    - {fileID: 114587448175260968, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
-  m_SourcePrefab: {fileID: 100100000, guid: 605946b25d2f0fc41b471624ab40ccc2, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1 &1541724401 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1888648384835908, guid: 605946b25d2f0fc41b471624ab40ccc2,
-    type: 2}
-  m_PrefabInternal: {fileID: 1541724400}
---- !u!114 &1541724402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1541724401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cae219232cc61a42b1ce607b9bdb95f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  schemes: {fileID: 11400000, guid: 5f670001d11072342bcd89132850e63e, type: 2}
-  onMovingEvent: {fileID: 11400000, guid: a23d62d4cfc6e7c4b86cb22284fb8731, type: 2}
-  onInteractionEvent: {fileID: 0}
-  onPauseEvent: {fileID: 0}
-  onQuitEvent: {fileID: 0}
