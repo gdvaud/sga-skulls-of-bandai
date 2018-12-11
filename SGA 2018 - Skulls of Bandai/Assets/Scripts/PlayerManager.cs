@@ -7,12 +7,25 @@ public class PlayerManager : Manager {
     [SerializeField] private LayerMask interactionMask;
 
     private Item interactingItem;
+    private float interactionDuration;
 
     public InventoryManager Inventory { get; private set; }
 
     private void Start() {
         Inventory = GetComponent<InventoryManager>();
         interactingItem = null;
+    }
+
+    private void Update() {
+        if (interactingItem != null) {
+            interactionDuration += Time.deltaTime;
+            if (interactionDuration > interactingItem.InteractionTime) {
+                interactingItem.OnInteractionFinished();
+                interactingItem = null;
+                interactionDuration = 0;
+                Debug.Log("Done interacting");
+            }
+        }
     }
 
     public void OnMoveAction(EventMessage msg) {
@@ -32,26 +45,21 @@ public class PlayerManager : Manager {
         if (msg is EventMessage<bool>) {
             bool started = ((EventMessage<bool>)msg).Value;
             if (interactingItem == null && started) {
+                // Interaction key pressed
                 Collider[] colliders = Physics.OverlapSphere(transform.position, interactionRange, interactionMask);
                 if (colliders.Length > 0) {
                     interactingItem = colliders[0].gameObject.GetComponent<Item>();
+                    interactingItem.InteractingPlayer = this;
                     Debug.Log("Interacting");
-                    // TODO
                 } else {
                     Debug.LogWarning("No interactable item in range");
                 }
             } else if (interactingItem != null && !started) {
-                interactingItem.EndInteraction();
+                // Interaction key released
                 interactingItem = null;
-            } else {
-                Debug.LogWarning("Already interacting");
             }
         } else {
             Debug.LogWarning("OnMoveAction called with a msg not of type EventMessage<bool> instead " + msg.GetType());
         }
-    }
-
-    public void ItemInteractionFinished() {
-        interactingItem = null;
     }
 }

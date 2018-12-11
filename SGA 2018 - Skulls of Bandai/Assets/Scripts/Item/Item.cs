@@ -2,51 +2,34 @@
 
 public abstract class Item : MonoBehaviour {
 
-    [SerializeField] protected float interactionTime;
-    protected float interactionTimeSpent;
+    [SerializeField] private float interactionTime;
+    public float InteractionTime {
+        get { return interactionTime; }
+        protected set { interactionTime = value; }
+    }
 
-    protected PlayerManager playerInteracting;
+    protected ItemState state;
+
     private ItemManager itemManager;
+    public PlayerManager InteractingPlayer { get; set; }
 
     protected void Start() {
-        playerInteracting = null;
+        state = ItemState.UNTOUCHED;
         itemManager = FindObjectOfType<ItemManager>();
+        itemManager.AddItem(this);
     }
 
-    protected void OnEnable() {
-        if (itemManager != null) {
-            itemManager.AddItem(this);
-        }
+    public virtual void OnInteractionFinished() {
+        InteractingPlayer = null;
     }
 
-    protected void OnDisable() {
-        if (itemManager != null) {
-            itemManager.RemoveItem(this);
-        }
+    public bool IsRepaired() {
+        return state == ItemState.REPAIRED;
     }
 
-    protected void Update() {
-        if (playerInteracting != null) {
-            interactionTimeSpent += Time.deltaTime;
-            if (interactionTimeSpent > interactionTime) {
-                OnInteractîonFinished();
-            }
-        }
-    }
-
-    // Called when the interaction timer has ended
-    protected abstract void OnInteractîonFinished();
-
-    // Called when a player interacts with the item
-    public abstract void StartInteraction(PlayerManager player);
-
-    // Returns if a player is already interacting
-    protected bool IsInteracting() {
-        return playerInteracting != null;
-    }
-
-    // Called when interaction is ended (usualy before the end of the timer)
-    public void EndInteraction() {
-        playerInteracting = null;
+    protected enum ItemState {
+        UNTOUCHED,
+        CARRIED,
+        REPAIRED
     }
 }

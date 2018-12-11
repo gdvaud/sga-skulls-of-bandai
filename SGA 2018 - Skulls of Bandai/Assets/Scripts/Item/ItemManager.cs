@@ -4,7 +4,21 @@ using UnityEngine;
 
 public class ItemManager : Manager {
 
-    private List<Item> items;
+    [SerializeField] private List<Item> items;
+
+    private void FixedUpdate() {
+        CheckIfItemsRepaired();
+    }
+
+    private void CheckIfItemsRepaired() {
+        foreach(Item i in items) {
+            if (!i.IsRepaired()) {
+                return;
+            }
+        }
+        // All item repaired
+        Debug.Log("Items repaired");
+    }
 
     public void AddItem(Item item) {
         if (!items.Contains(item)) {

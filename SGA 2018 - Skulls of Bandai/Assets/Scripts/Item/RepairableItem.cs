@@ -1,12 +1,6 @@
 ﻿public class RepairableItem : Item {
 
-    protected override void OnInteractîonFinished() {
-        playerInteracting.ItemInteractionFinished();
-    }
-
-    public override void StartInteraction(PlayerManager player) {
-        if (!IsInteracting()) {
-            playerInteracting = player;
-        }
+    public override void OnInteractionFinished() {
+        state = ItemState.REPAIRED;
     }
 }
